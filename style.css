@@ -1,3 +1,29 @@
-p {
-    color: red;
+body {
+    font-family: 'Courier New', monospace !important;
 }
+
+img {
+    display: block;
+    max-width: 10%;
+    height: auto;
+}
+
+.header img {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: #555;
+}
+
+.header h5 {
+    float: right;
+    top: 18px;
+    left: 10px;
+}
+
+.header p {
+    float: right;
+    top: 18px;
+    left: 10px;
+}
+
