@@ -57,6 +57,12 @@ img {
     left: 10px;
 }
 
+.navbar {
+  position: fixed;
+  transition: 1s;
+  height: 4rem;
+}
+
 /* Centered text */
 .centered {
   position: absolute;
@@ -77,4 +83,28 @@ img {
   color: white;
   font-size: xx-large;
   text-align: center;
+}
+
+.welcome-image-box {
+  position: relative;
+}
+
+img#welcome-image {
+  filter: brightness(30%);
+}
+
+div#about {
+  background-color: #339989;
+}
+
+i#social-icon {
+  color: #D3D3D3;
+}
+
+.fa-github:hover {
+  color: #171515;
+}
+
+.fa-linkedin-square:hover {
+  color: #0A66C2;
 }
