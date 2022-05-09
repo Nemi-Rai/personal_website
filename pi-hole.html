@@ -4,51 +4,43 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
-        <title>Nemi Rai</title>
-        <meta charset="UTF-8">
+	<script src="fade.js"></script>
+
+    <title>Nemi Rai</title>
+    <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
-
-	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+	
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #18191a;" id="navbar">
 	    <div class="container-fluid">
-    	    	<a class="navbar-brand" href="index.html">Nemi Rai</a>
-
-		<button class="navbar-toggler" type="button" 
-			data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      		    <span class="navbar-toggler-icon"></span>
+    	    <a class="navbar-brand" href="index.html">Nemi Rai</a>
+			<button class="navbar-toggler dropdown-menu-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      			<span class="navbar-toggler-icon"></span>
     		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 		    <ul class="navbar-nav navbar-right nav-pills me-auto">
-                        <li class="nav-item"><a class="nav-link" href="https://github.com/Nemi-Rai/"><i class="fa fa-github"></i></a></li>
-                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/nemi-rai/"><i class="fa fa-linkedin-square"></i></a></li>
-                    </ul>
-
-
+                <li class="nav-item"><a class="nav-link" href="https://github.com/Nemi-Rai/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github fa-2x social-icon"></i></a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/nemi-rai/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin-square fa-2x social-icon"></i></a></li>
+            </ul>
 		    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-      		        <li class="nav-item">
-	      		    <a class="nav-link" href="index.html">About</a>
-      		        </li>
-      		        <li class="nav-item">
-        		    <a class="nav-link" href="blog.html">Blog</a>
-      		        </li>
-      		        <li class="nav-item">
-           		    <a class="nav-link active" href="projects.html">Projects</a>
-      		        </li>
-    		    </ul>
-			
+      		    <li class="nav-item">
+	      			<a class="nav-link active" href="index.html">About</a>
+      		    </li>
+      		    <li class="nav-item">
+           		    <a class="nav-link" href="projects.html">Projects</a>
+      		    </li>
+    		</ul>
 		</div>
-    	    </div>
 	</nav>
 
-	<div class="container mt-3 p-2 align-items-center" style="background-color: #339989;">
+	<div class="container p-2 align-items-center" style="background-color: #339989; margin-top: 5rem;">
 		<h3>
 			Projects >> Pi-Hole
 		</h3>
