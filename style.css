@@ -129,5 +129,9 @@ a#about {
 }
 
 .progress-bar#programming-level {
-  background-color: #339989;
+  background-color: #818589;
+}
+
+.progress-bar#os-level {
+  background-color: #202020;
 }
