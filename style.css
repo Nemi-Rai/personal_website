@@ -22,6 +22,11 @@ body {
     margin: auto;
 }
 
+h3#title {
+  color: #f1f1f1;
+  font-weight: bold;
+}
+
 
 
 p {
@@ -79,22 +84,32 @@ img {
   color: white;
 }
 
+@media screen and (max-width: 500px) {
+  .bottomed {
+    display: none;
+  }
+}
+
+img#welcome-image {
+  filter: brightness(0.3);
+  font-size: xx-large;
+}
+
 .welcome {
   color: white;
   font-size: xx-large;
   text-align: center;
 }
 
-.welcome-image-box {
-  position: relative;
+@media screen and (max-width: 500px) {
+.welcome {
+  color: white;
+  font-size: large;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-5%, -5%);
 }
-
-img#welcome-image {
-  filter: brightness(30%);
-}
-
-div#about {
-  background-color: #339989;
 }
 
 i#social-icon {
@@ -102,9 +117,17 @@ i#social-icon {
 }
 
 .fa-github:hover {
-  color: #171515;
+  color: #F1502F;
 }
 
 .fa-linkedin-square:hover {
   color: #0A66C2;
+}
+
+a#about {
+  scroll-margin-top: 4rem;
+}
+
+.progress-bar#programming-level {
+  background-color: #339989;
 }
