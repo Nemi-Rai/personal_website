@@ -8,7 +8,6 @@
 
     <link rel="stylesheet" href="style.css">
 
-
     <title>Nemi Rai</title>
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -46,7 +45,7 @@
 		<!-- Title -->
 		<div class="container align-items-center" style="margin-top: 5rem;">
 			<h3 id="title">
-				Projects >>> Pi-Hole
+				Projects >> 3-Axis Robotic Arm 
 			</h3>
 			<hr/>
 		</div>
@@ -55,12 +54,33 @@
 		<div class="container mt-2">
 			<div class="row">
 				<div class="col-12 col-md-6">
-					<img src="pi_hole.jpg" class="img-fluid rounded float-end" style="float: left; margin-bottom: 2rem;"></img>
+					<div id="carousel-image" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#carousel-image" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#carousel-image" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						  </div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="arm_0.jpg" class="img-fluid rounded">
+							</div>
+							<div class="carousel-item">
+								<img src="arm_1.jpg" class="img-fluid rounded">
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#carousel-image" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#carousel-image" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						  </button>
+					</div>
 				</div>
 				<div class="col-12 col-md-6">
 					<div class="col-12">
 						<p>Author: Nemi Rai</p>
-						<p>Date: January 2022</p>
+						<p>Date: January 2020</p>
 						<hr/>
 					</div>
 						<h5 style="font-weight: bold;">
@@ -68,27 +88,23 @@
 						</h5>
 					<div class="col-12" style="text-align: justify;">
 						<p>
-							Pi-Hole is a DNS sinkhole that blocks advertisements network-wide. The software is run on Raspberry Pi microcomputers and works by not forwarding any web requests to known advertisement service domains. Pi-Hole also has standard DNS services such as caching using dnsmasq and DNS forwarding.  
+							This robotic arm is a <a href="https://www.20sffactory.com/robot/about">community open source project</a> based off an original design 
+							by <a href="https://www.thingiverse.com/ftobler/designs">Florin Tobler</a>. The arm is fully 3D-Printed, with the exception of the 
+							electronic parts. The arm is controlled by a RAMPS 1.4 board which drives 3 Nema 17 stepper motors for each axis of the arm; the board
+							also drives a BYJ48 stepper motor for the arm's gripper. 
 						</p>
 					</div>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-12">
 							<h5 style="font-weight: bold;">
 								Parts list
 							</h5>
 							<ul>
-								<li>Raspberry Pi</li>
-								<li>SD card</li>
-								<li>Power supply</li>
-							</ul>
-						</div>
-						<div class="col-6">
-							<h5 style="font-weight: bold;">
-								Optional Parts
-							</h5>
-							<ul>
-								<li>5v fans</li>
-								<li>Case</li>
+								<li>3x Nema 17 stepper motor</li>
+								<li>Arduino Mega 2560 microcontroller</li>
+								<li>RAMPS 1.4 Board</li>
+								<li>12V 4A power supply</li>
+								<li>For a full parts list as well as documentation see <a href="https://www.20sffactory.com/robot/about">here</a></li>
 							</ul>
 						</div>
 					</div>
