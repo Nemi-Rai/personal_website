@@ -20,7 +20,7 @@
 		<!-- Navigation bar -->
 		<nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="navbar">
 			<div class="container-fluid" id="collapse">
-				<a class="navbar-brand" href="index.html">>>> Nemi Rai</a>
+				<a class="navbar-brand" href="index.html">NemiRai.com</a>
 				<button class="navbar-toggler dropdown-menu-end" id="navbutton" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -31,13 +31,13 @@
 					</ul>
 					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 						<li class="nav-item">
-							<a class="nav-link active" href="index.html">About</a>
+							<a class="nav-link" href="#about">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="projects.html">Projects</a>
+							<a class="nav-link" href="#projects">Projects</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="resume.html">Resume</a>
+							<a class="nav-link" href="#resume">Resume</a>
 						</li>
 					</ul>
 				</div>
@@ -255,8 +255,16 @@
 					</h5>
 
 					<ul>
-						<li>2022 20/3658 place National Cyber League Team CTF</li>
-						<li>2022 255/6020 place National Cyber League Individual CTF</li>
+						<li>
+							<a href="ncl_2022_team.html">
+								2022 255/6020 place National Cyber League Team CTF
+							</a>
+						</li>
+						<li>
+							<a href="ncl_2022_individual.html">
+								2022 255/6020 place National Cyber League Individual CTF
+							</a>
+						</li>
 						<li>2021 2/12 place CyberSci Team CTF</li>
 						<li>2021 68/3910 place National Cyber League Team CTF</li>
 						<li>2021 462/6480 place National Cyber League Individual CTF</li>
@@ -266,8 +274,69 @@
 			</div>
 		</div>
 
-		<div class="container">
-			<hr/>
+		<hr/>
+
+		<!-- Projects -->
+		<a id="projects"></a>
+		<div class="container p-2" id="projects">
+			<h3 id="title">
+				Projects
+			</h3>
 		</div>
+		<div class="container">
+			<ul class="list-group">
+				<li class="list-group-item" style="background-color: #808080;">
+					<a href="pi-hole.html">
+						<div class="row">
+							<div class="col-6 col-md-6">
+								Pi-Hole
+							</div>
+							<div class="col-6 col-md-6">
+								<img src="pi_hole.jpg" class="img-fluid rounded float-end project-image">
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="list-group-item" style="background-color: #808080;">
+					<a href="mupibot.html">
+						<div class="row">
+							<div class="col-6 col-md-6">
+								MUPiBot
+							</div>
+							<div class="col-6 col-md-6">
+								<img src="mupibot_finished.jpg" class="img-fluid rounded float-end project-image">
+							</div>
+						</div>
+					</a>
+				</li>
+				<li class="list-group-item" style="background-color: #808080;">
+					<a href="robot-arm.html">
+						<div class="row">
+							<div class="col-6 col-md-6">
+								FTobler Robotic Arm
+							</div>
+							<div class="col-6 col-md-6">
+								<img src="arm_1.jpg" class="img-fluid rounded float-end project-image">
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<hr/>
+
+		<!-- Projects -->
+		<a id="resume"></a>
+		<div class="container p-2" id="resume">
+			<h3 id="title">
+				Resume
+			</h3>
+		</div>
+		<div class="container">
+			<iframe class="resume" src="https://docs.google.com/gview?url=https://nemirai.com/nehemjit_rai_resume.pdf&embedded=true" frameborder="0"></iframe>
+		</div>
+		
+		<hr/>
     </body>
 </html>

@@ -18,7 +18,7 @@
 		<!-- Navigation bar -->
 	<nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #18191a;" id="navbar">
 		<div class="container-fluid" style="background-color: #18191a;">
-			<a class="navbar-brand" href="index.html">>>> Nemi Rai</a>
+			<a class="navbar-brand" href="index.html">NemiRai.com</a>
 			<button class="navbar-toggler dropdown-menu-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -29,13 +29,13 @@
 				</ul>
 				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
 					<li class="nav-item">
-						<a class="nav-link" href="index.html">About</a>
+						<a class="nav-link" href="index.html#about">About</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link active" href="projects.html">Projects</a>
+						<a class="nav-link active" href="index.html#projects">Projects</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="resume.html">Resume</a>
+						<a class="nav-link" href="index.html#resume">Resume</a>
 					</li>
 				</ul>
 			</div>
@@ -45,8 +45,17 @@
 		<!-- Title -->
 		<div class="container align-items-center" style="margin-top: 5rem;">
 			<h3 id="title">
-				Projects >> 3-Axis Robotic Arm 
+				Projects >> FTobler Robotic Arm 
 			</h3>
+			<hr/>
+			<div class="row">
+				<div class="col-auto col-md-auto">
+					<p>Author: Nemi Rai</p>
+				</div>
+				<div class="col-auto col-md-auto">
+					<p>Date: January 2020</p>
+				</div>
+			</div>
 			<hr/>
 		</div>
 
@@ -76,37 +85,61 @@
 							<span class="visually-hidden">Next</span>
 						  </button>
 					</div>
+						<video style="width: 100%; margin-top: 1rem;"controls>
+							<source src="arm.mp4" type="video/mp4">
+						  Your browser does not support the video tag.
+						  </video>
+
 				</div>
 				<div class="col-12 col-md-6">
-					<div class="col-12">
-						<p>Author: Nemi Rai</p>
-						<p>Date: January 2020</p>
-						<hr/>
-					</div>
-						<h5 style="font-weight: bold;">
-							Summary
-						</h5>
+					<h5 style="font-weight: bold;">
+						Summary
+					</h5>
 					<div class="col-12" style="text-align: justify;">
 						<p>
 							This robotic arm is a <a href="https://www.20sffactory.com/robot/about">community open source project</a> based off an original design 
 							by <a href="https://www.thingiverse.com/ftobler/designs">Florin Tobler</a>. The arm is fully 3D-Printed, with the exception of the 
-							electronic parts. The arm is controlled by a RAMPS 1.4 board which drives 3 Nema 17 stepper motors for each axis of the arm; the board
+							electronic parts. A RAMPS 1.4 board controls the arm by driving 3 Nema 17 stepper motors for each axis of the arm; the board
 							also drives a BYJ48 stepper motor for the arm's gripper. 
+							<br><br>
+							The robotic arm's firmware, as well as other files, can be found on the <a href="https://github.com/20sffactory/community_robot_arm">GitHub</a>.
+							G-code is used to program the arm's movements in either relative or absolute coordinates. In the early stages of the project the interface was 
+							very limited. I wrote a Python program to read g-code from a file and deliver it over serial to the Arduino Mega 2560 microcontroller to control 
+							the arm. The software for controlling the arm has since been  updated as seen on the <a href="https://www.20sffactory.com/robot/resource/firmware">
+							project website</a>.
 						</p>
 					</div>
-					<div class="row">
-						<div class="col-12">
-							<h5 style="font-weight: bold;">
-								Parts list
-							</h5>
+					<div class="col-12">
+						<h5 style="font-weight: bold;">
+							Parts list
+						</h5>
+						<ul>
+							<li>3x Nema 17 stepper motor</li>
+							<li>Arduino Mega 2560 microcontroller</li>
+							<li>RAMPS 1.4 Board</li>
+							<li>12V 4A power supply</li>
+							<li>For a full parts list as well as documentation see <a href="https://www.20sffactory.com/robot/about">here</a></li>
+						</ul>
+					</div>
+					<div class="col-12">
+						<h5 style="font-weight: bold;">
+							Future additions.
+						</h5>
+						<p>
+							The community has added many features to this arm since the start of the project. Version 1.0 of the arm uses 3D-printed gears that are in 
+							direct contact with each other for each of the axis. Because of the limitations of the resolution with FDM 3D-printing, having the gears 
+							in direct contact with each other was not ideal because the arm would sometimes seize or not move smoothly.
+							<br><br>
+							Some additional features that the community has produced include:
 							<ul>
-								<li>3x Nema 17 stepper motor</li>
-								<li>Arduino Mega 2560 microcontroller</li>
-								<li>RAMPS 1.4 Board</li>
-								<li>12V 4A power supply</li>
-								<li>For a full parts list as well as documentation see <a href="https://www.20sffactory.com/robot/about">here</a></li>
-							</ul>
-						</div>
+								<li>
+									A belt-driven track based off 4040 V-extrusions and an additional Nema 17 stepper motor.
+								</li>
+								<li>
+									Fully converting the arm to a fully belt-driven model.
+								</li>
+							</ul> 
+						</p>
 					</div>
 				</div>
 			</div>
