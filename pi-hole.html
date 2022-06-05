@@ -38,6 +38,9 @@
 					<li class="nav-item">
 						<a class="nav-link" href="index.html#resume">Resume</a>
 					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="home_lab.html">Home Lab</a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -64,16 +67,46 @@
 		<div class="container mt-2">
 			<div class="row">
 				<div class="col-12 col-md-6">
-					<img src="pi_hole.jpg" class="img-fluid rounded float-end" style="float: left; margin-bottom: 2rem;"></img>
+					<img src="img/pi_hole.jpg" class="img-fluid rounded float-end" style="float: left; margin-bottom: 2rem;"></img>
+					<img src="img/pihole_ui.png" class="img-fluid rounded float-end" style="float: left; margin-bottom: 2rem;"></img>
 				</div>
 				<div class="col-12 col-md-6">
-						<h5 style="font-weight: bold;">
-							Summary
-						</h5>
+					<h5 style="font-weight: bold;">
+						Summary
+					</h5>
 					<div class="col-12" style="text-align: justify;">
 						<p>
-							Pi-Hole is a DNS sinkhole that blocks advertisements network-wide. The software is run on Raspberry Pi microcomputers and works by not forwarding any web requests to known advertisement service domains. Pi-Hole also has standard DNS services such as caching using dnsmasq and DNS forwarding.  
+							<a href="https://pi-hole.net" target="_blank" rel="noopener noreferrer">Pi-hole</a> is a DNS server application that can be run on most *nix operating systems. Its primary purpose is to drop any requests to known ad-serving domains, however since the projects release many new features have been implemented.
 						</p>
+					</div>
+					<h5 style="font-weight: bold;">
+						Recursive DNS Server
+					</h5>
+					<div class="col-12" style="text-align: justify;">
+						<p>
+							This implementation uses a low-cost Raspberry Pi microcomputer to use to create a recursive, and caching DNS resolver. Under the hood, the unbound service is used to add this extra functionality. A tutorial, as well as configuration files can be found in the <a href="https://docs.pi-hole.net/guides/dns/unbound/" target="_blank" rel="noopener noreferrer">doc</a>. 
+							<br><br>
+							A standard installation of pi-hole uses third-party upstream DNS servers to resolve requests. However if the recursive feature is installed, Pi-hole will use unbound to seek out the authoritative servers for a given request (if it is not already locally cached). The benefit of using a personal recursive DNS server is having extra privacy from third parties that you would otherwise share DNS requests with.
+						</p>
+					</div>
+					<h5 style="font-weight: bold;">
+						Blocklists
+					</h5>
+					<div class="col-12" style="text-align: justify;">
+						<p>
+							Pi-hole comes with a standard list of ad-serving domains, this can be expanded upon by adding blocklist collections. These collections can be found by searching online, here's a few well known repositories:
+						</p>
+						<ul>
+							<li>
+								<a href="https://firebog.net" target="_blank" rel="noopener noreferrer">The Firebog</a> 
+							</li>
+							<li>
+								<a href="https://github.com/lightswitch05/hosts" target="_blank" rel="noopener noreferrer">lightswitch05</a> 
+							</li>
+							<li>
+								<a href="https://github.com/blocklistproject/Lists" target="_blank" rel="noopener noreferrer">BlockListProject</a> 
+							</li>
+						</ul>
 					</div>
 					<div class="row">
 						<div class="col-6">
@@ -92,7 +125,7 @@
 							</h5>
 							<ul>
 								<li>5v fans</li>
-								<li>Case</li>
+								<li>Case | <a href="data/rpi_pc_case.rar" download>Download STL</a></li>
 							</ul>
 						</div>
 					</div>

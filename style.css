@@ -183,3 +183,12 @@ a#resume {
     width: 50%;
   }
 }
+
+@media only screen and (min-width: 500px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 0.5em;
+  }
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 2px solid #b6b6b6;
+  }
+}
