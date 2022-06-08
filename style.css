@@ -1,9 +1,5 @@
-html {
-    background-color: #4f4f4f;
-}
-
 body {
-    background-color: #4f4f4f;
+    background-color: #000000;
     font-family: 'Courier New', monospace !important;
 }
 
@@ -126,19 +122,19 @@ i#social-icon {
 }
 
 a:link {
-  color: #202020;
+  color: #008F11;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #202020;
+  color: #008F11;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:hover {
-  color: white;
+  color: #00FF41;
   background-color: transparent;
   text-decoration: none;
 }
@@ -155,11 +151,11 @@ a#resume {
   scroll-margin-top: 4rem;
 }
 .progress-bar#programming-level {
-  background-color: #818589;
+  background-color: #008F11;
 }
 
 .progress-bar#os-level {
-  background-color: #202020;
+  background-color: #008F11;
 }
 
 .resume {
@@ -191,4 +187,15 @@ a#resume {
   .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
     border-right: 2px solid #b6b6b6;
   }
+}
+
+.info_block {
+  background-color: #000000;
+  opacity: 0.8;
+}
+
+.full_background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
