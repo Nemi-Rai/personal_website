@@ -66,9 +66,7 @@
 			<div class="container mt-2">
 				<div class="row">
 					<div class="col-12 col-md-6 info_block">
-						<img src="img/kali_logo.png" class="img-fluid rounded float-end" style="float: left; margin-bottom: 2rem; width: 50%;"></img>
-						<img src="img/dvwa_logo.png" class="img-fluid rounded float-end" style="float: left; margin-bottom: 2rem; width: 50%;"></img>
-						<img src="img/bwapp_logo.png" class="img-fluid rounded float-end" style="float: left; margin-bottom: 2rem; width: 50%;"></img>
+						<img src="img/car_unlock.jpg" class="img-fluid rounded float-end" style="float: left; margin-bottom: 2rem;"></img>
 					</div>
 					<div class="col-12 col-md-6">
 						<h5 style="font-weight: bold; color: #ffffff">
@@ -76,15 +74,24 @@
 						</h5>
 						<div class="col-12 info_block" style="text-align: justify;">
 						<p>
-							Beep beep mother fucker
+							Vehicles are becoming increasingly complicated over time with more components communicating with each other through electrical means rather 
+							than purely mechanical. Vehicles benefit from security through obscurity because they are very complicated systems. However, like all systems
+							they are not 100% secure and can be hacked.
 						</p>
 						<h5 style="font-weight: bold; color:#ffffff">
-							Components of a Home Lab
+							Attack Surface and Initialization Vectors
 						</h5>
 						<p>
-							A home lab consists of an attacker machine and other end systems connected by switches and routers. The attacker machine is usually linux-based and Kali 
-							is the distribution of choice as it comes with many penetrations testing tools preinstalled. Any linux distribution can be used for the attacker machine 
-							because these tools can be installed on any linux distribution with their package manager.
+							Whenever a vehicle has a feature where two or more components react to each other, such as adaptive headlights, there must be an element 
+							facilitating the communication between the components. Adaptive headlights adjust with the steering wheel, so there must be some element 
+							that facilitates the communication between the steering wheel and headlight assembly. The ECU is usually responsible for most 
+							communications, although vehicles also do use shared and dedicated busses for inter-vehicle communications. 
+							</br></br>
+							Accessing a vehicle's ECU is near-impossible, however modern cars usually have an in-car-entertainment (ICE) or infotainment system which is 
+							a good starting point for a researcher to look for vulnerabilities. The ICE system can use wireless protocols such as bluetooth and others, which 
+							makes it possible for an intruder to gain access remotely and possibly control the connected systems to the ICE system.
+
+
 						</p>
 						</div>
 					</div>
