@@ -62,7 +62,7 @@ img {
 .navbar {
   position: fixed;
   transition: 1s;
-  height: 4rem;
+  min-height: 4rem;
 }
 
 /* Centered text */
@@ -103,8 +103,8 @@ img#welcome-image {
   color: white;
   font-size: large;
   position: absolute;
-  top: 40%;
-  left: 5%;
+  top: 35%;
+  left: 7%;
   transform: translate(-5%, -5%);
 }
 }
