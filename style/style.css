@@ -103,8 +103,8 @@ img#welcome-image {
   color: white;
   font-size: large;
   position: absolute;
-  top: 10%;
-  left: 10%;
+  top: 40%;
+  left: 5%;
   transform: translate(-5%, -5%);
 }
 }
