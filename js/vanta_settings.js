@@ -1,7 +1,7 @@
 VANTA.NET({
     el: "#vantajs",
     mouseControls: false,
-    touchControls: true,
+    touchControls: false,
     gyroControls: false,
     minHeight: 200.00,
     minWidth: 200.00,
