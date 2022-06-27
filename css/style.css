@@ -199,3 +199,9 @@ a#resume {
   width: 100%;
   position: fixed;
 }
+
+.square {
+  height: 50px;
+  width: 50px;
+  background-color: #555;
+}
