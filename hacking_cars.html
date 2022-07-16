@@ -48,7 +48,7 @@
 			<!-- Title -->
 			<div class="container align-items-center" style="margin-top: 5rem;">
 				<h3 id="title">
-					Hacking cars
+					Automotive Networking
 				</h3>
 				<hr/>
 				<div class="row info_block">
@@ -56,7 +56,7 @@
 						<p>Author: Nemi Rai</p>
 					</div>
 					<div class="col-auto col-md-auto">
-						<p>Date: June 2022</p>
+						<p>Date: July 2022</p>
 					</div>
 				</div>
 				<hr/>
@@ -66,32 +66,37 @@
 			<div class="container mt-2">
 				<div class="row">
 					<div class="col-12 col-md-6 info_block">
-						<img src="img/car_unlock.jpg" class="img-fluid rounded float-end" style="float: left; margin-bottom: 2rem;"></img>
+						<!--<img src="img/car_unlock.jpg" class="img-fluid rounded float-end" style="float: left; margin-bottom: 2rem;"></img>-->
 					</div>
 					<div class="col-12 col-md-6">
-						<h5 style="font-weight: bold; color: #ffffff">
-							Summary
-						</h5>
 						<div class="col-12 info_block" style="text-align: justify;">
-						<p>
-							Vehicles are becoming increasingly complicated over time with more components communicating with each other through electrical means rather 
-							than purely mechanical. Vehicles benefit from security through obscurity because they are very complicated systems. However, like all systems
-							they are not 100% secure and can be hacked.
-						</p>
-						<h5 style="font-weight: bold; color:#ffffff">
-							Attack Surface and Initialization Vectors
-						</h5>
-						<p>
-							Whenever a vehicle has a feature where two or more components react to each other, such as adaptive headlights, there must be an element 
-							facilitating the communication between the components. Adaptive headlights adjust with the steering wheel, so there must be some element 
-							that facilitates the communication between the steering wheel and headlight assembly. The ECU is usually responsible for most 
-							communications, although vehicles also do use shared and dedicated busses for inter-vehicle communications. 
-							</br></br>
-							Accessing a vehicle's ECU is near-impossible, however modern cars usually have an in-car-entertainment (ICE) or infotainment system which is 
-							a good starting point for a researcher to look for vulnerabilities. The ICE system can use wireless protocols such as bluetooth and others, which 
-							makes it possible for an intruder to gain access remotely and possibly control ICE connected systems.
-
-						</p>
+							<h5 style="font-weight: bold; color: #ffffff">
+								Introduction
+							</h5>
+							<p>
+								Vehicles have evolved a lot over the past few decades to become a computer network on wheels.
+								This network is made up of embedded systems called Electronic Control Units (ECUs) and the mechanical
+								parts that they interface with such as sensors and actuators. Modern cars may have up to 70 ECUs
+								that control systems such as anti-lock brakes, telematic services, engine timing, entertainment, and
+								more.
+							</p>
+							<h5 style="font-weight: bold; color:#ffffff">
+								Vehicle Bus Protocols
+							</h5>
+							<p>
+								A  bus protocol facilitates the communication between ECUs and other parts connected to the bus.
+								Vehicles can have one or more Bus protocols depending on the category of vehicle and manufacturer.
+								The Control Area Network (CAN) protcol has been standard in US-built cars and trucks since 1996;
+								CAN was made mandatory in 2008 for US vehicles and 2001 for European vehicles.
+							</p>
+							<h5 style="font-weight: bold; color:#ffffff">
+								Control Area Network
+							</h5>
+							<p>
+								There are many parts to the vehicle network, having dedicated wiring between every component is not
+								efficient, costly, and can be near-impossible to manage with the many features in modern cars. The CAN
+								protocol solves this problem by connecting ECUs and other parts to a shared wire, or bus.
+							</p>
 						</div>
 					</div>
 				</div>
